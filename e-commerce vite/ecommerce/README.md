@@ -63,4 +63,7 @@ Para facilitar seu trabalho, o projeto já disponibiliza alguns componentes esse
 
 
 
-
+https://www.shopharrypotter.com.br/
+primeiro deixar a minha cara,colocar as fotos dos meus produtos e descrição (ja fiz)
+fazer cabeçalho
+carrossel de acordo com o clone da amazon
