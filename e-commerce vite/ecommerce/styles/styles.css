@@ -1,6 +1,49 @@
 /* Escreva seu codigo css aqui */
-
-
+.shp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+  
+  .shp-logo img {
+    width: 120px;
+  }
+  
+  .shp-navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .shp-navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .shp-navbar ul li a:hover {
+    color: #f5c518;
+  }
+  
+  .shp-actions .shp-btn {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+    padding: 5px 10px;
+    border: 1px solid #f5c518;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .shp-actions .shp-btn:hover {
+    background-color: #f5c518;
+    color: #1a1a1a;
+  }
+  
 
 
 

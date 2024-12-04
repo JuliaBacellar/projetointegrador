@@ -9,6 +9,7 @@ const sectionMaisVendidos = document.querySelector("#section-2 .carrousel")
 const sectionPromocoes = document.querySelector("#section-3 .carrousel")
 
 
+
 //Fitros
 let filtroCategoriaNovidades = database.filter(produto => produto.classificacaoProduto === "Novidades" && produto.exibirHome == true )
 let filtroMaisVendidos = database.filter(produto => produto.classificacaoProduto === "Mais_Vendidos" && produto.exibirHome == true )

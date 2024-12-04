@@ -24,7 +24,7 @@ Para facilitar seu trabalho, o projeto já disponibiliza alguns componentes esse
 
 ## Sobre as Páginas:
 
-- **index.html**: Representa a página inicial do seu projeto. Sua missão nesta página será:
+- **index.html**: Representa a página inicial do seu projeto. Sua    missão nesta página será:
   - Desenvolver o cabeçalho e o rodapé.
   - Utilizar o carrossel de produtos para criar três áreas que exibam os produtos vendidos na HOME.
   - Incluir banners.
