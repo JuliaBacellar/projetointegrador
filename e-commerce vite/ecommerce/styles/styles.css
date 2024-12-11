@@ -189,3 +189,347 @@ img {
     padding-top: 10px;
     color: #999;
   }
+
+  /* Estilo geral para a seção "Sobre Nós" */
+.about-us, .contact-us {
+  background: linear-gradient(to bottom, #f5deb3, #e5c595); /* Textura de pergaminho */
+  padding: 20px;
+  border: 3px solid #4a2d0a; /* Borda que lembra pergaminho queimado */
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Georgia', serif; /* Caligrafia elegante */
+  color: #2e1d13;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Elementos decorativos de estrelas mágicas */
+.about-us::before, .contact-us::before {
+  content: '✨';
+  font-size: 2rem;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  color: rgba(255, 223, 0, 0.7);
+  animation: sparkle 2s infinite alternate;
+}
+
+/* Texto "Sobre Nós" */
+.about-us h2, .contact-us h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Cinzel', serif; /* Caligrafia mágica */
+  color: #4a2d0a;
+  border-bottom: 2px solid #4a2d0a;
+  padding-bottom: 5px;
+}
+
+/* Corpo do texto */
+.about-us p, .contact-us p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Estilo do formulário */
+.contact-form label {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 5px;
+  color: #4a2d0a;
+  text-shadow: 1px 1px 1px #ffe1a8;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #4a2d0a;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 15px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão mágico */
+.contact-form button {
+  background: linear-gradient(to bottom, #b71c1c, #e65100); /* Gradiente Grifinória */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+  text-shadow: 1px 1px 2px #000;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-form button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 223, 0, 0.8); /* Efeito de feitiço */
+}
+
+/* Efeito de "brilho" em hover nos títulos */
+.about-us h2:hover, .contact-us h2:hover {
+  color: rgba(255, 223, 0, 0.8);
+  text-shadow: 0 0 10px rgba(255, 223, 0, 0.8);
+  transition: all 0.3s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .about-us, .contact-us {
+    padding: 15px;
+  }
+
+  .about-us h2, .contact-us h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form button {
+    font-size: 1rem;
+  }
+}
+
+/* Animação de estrelas mágicas */
+@keyframes sparkle {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(5px, 5px) scale(1.2);
+    opacity: 0.6;
+  }
+}
+/* Estilos do Checkout */
+
+/* Seção principal do checkout */
+.product.main-content {
+  padding: 2rem 0;
+  background-color: #2e2b29; /* Fundo temático */
+  color: #f5f5f5; /* Texto claro */
+}
+
+.product.text-container {
+  text-align: center;
+}
+
+.product.text-container h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #d4af37; /* Dourado */
+}
+
+.product.text-container p {
+  font-size: 1.2rem;
+}
+
+/* Layout do checkout */
+#checkout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+#checkout .grid_col_1,
+#checkout .grid_col_2 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container de totais */
+.total_container {
+  background: #403d3b;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 2px solid #d4af37;
+}
+
+.total_container .total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.total_container h3 {
+  font-size: 1.1rem;
+}
+
+/* Botão de checkout */
+.checkout_btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: #d4af37;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1f1d1b;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.checkout_btn:hover {
+  background: #b38e2b;
+}
+
+/* Container de frete */
+.freight_container {
+  margin-top: 1.5rem;
+}
+
+.freight_container label {
+  font-size: 1rem;
+}
+
+.freight_container input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #d4af37;
+  width: calc(100% - 3rem);
+}
+
+.freight_container button {
+  background: #d4af37;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.freight_container button:hover {
+  background: #b38e2b;
+}
+
+.freight_container a {
+  color: #d4af37;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+.freight_pricing {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background: #403d3b;
+  border-radius: 10px;
+  border: 1px solid #d4af37;
+}
+
+.freight_pricing h3 {
+  margin: 0;
+}
+
+.freight_pricing p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #checkout {
+    grid-template-columns: 1fr;
+  }
+
+  
+
+
+
+}
+/* Estilos da página de Pagamento */
+
+/* Seção principal */
+.product.main-content {
+  padding: 2rem 0;
+  background-color: #2e2b29; /* Fundo temático */
+  color: #f5f5f5;
+}
+
+/* Container de produtos */
+.product.text-container {
+  text-align: center;
+}
+
+.product.text-container h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #d4af37; /* Dourado */
+}
+
+.product.text-container p {
+  font-size: 1.2rem;
+}
+
+/* Layout de exibição de produtos */
+.product .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.product .product-item {
+  width: calc(33.33% - 1rem);
+  background: #403d3b;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  border: 2px solid #d4af37;
+}
+
+.product .product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product .product-item h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #d4af37; /* Dourado */
+}
+
+.product .product-item p {
+  font-size: 1rem;
+  color: #f5f5f5;
+  margin-top: 0.5rem;
+}
+
+/* Botões de interação */
+.product .product-item .button {
+  margin-top: 1rem;
+  background-color: #d4af37;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  color: #1f1d1b;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.product .product-item .button:hover {
+  background-color: #b38e2b;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .product .product-item {
+    width: calc(50% - 1rem); /* Ajusta para 2 produtos por linha em telas menores */
+  }
+}
+
+@media (max-width: 768px) {
+  .product .product-item {
+    width: 100%; /* Ajusta para 1 produto por linha em telas ainda menores */
+  }
+}

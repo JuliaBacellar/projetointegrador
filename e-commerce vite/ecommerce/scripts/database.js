@@ -22,7 +22,7 @@ export const database = [ /* "Banco de dados" de produtos comercializados no sit
         descricao:"PRODUTO OFICIAL HARRY POTTER,Mousepad Oficial Harry Potter Grifinória Tamanho: Único (20x25cm) Cor : Colorido Composição: Mousepad ergonômico, em tecido com almofada. Possui apoio para facilitar o seu trabalho, evitar fadigas e lesões.",
         imagemProduto: {
             img1:"./images/products/potter_grifinoria.webp",
-            img3:"./images/products/potter_grifinoria2.webp",
+            img3:"./images/products/potter_grifinoria.webp",
             img4:"./images/products/mousepad_harrypotter.png",
     },
         categoriaProduto: 'PRODUTOS PARA PERIFÉRICOS',
