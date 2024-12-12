@@ -532,4 +532,13 @@ img {
   .product .product-item {
     width: 100%; /* Ajusta para 1 produto por linha em telas ainda menores */
   }
+  .e-mail{
+    /* Estilo dos placeholders */
+
+  color: #d4af37;
+  font-style: italic;
+  font-family: 'Cinzel', serif;
+  opacity: 0.7;
+
+  }
 }
