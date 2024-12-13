@@ -542,3 +542,46 @@ img {
 
   }
 }
+
+/* aqui estão algumas alterações */
+.product-card-idprod{
+  width: 17rem;
+}
+.product-card-idprod img{
+  border-radius: 15px;
+}
+
+
+.carrousel{
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_images_container{
+  display: flex;
+  flex-direction: row;
+  margin-inline: 12rem;
+}
+
+.images_selector ul{
+  list-style: none;
+}
+
+.images_selector img{
+  width: 14rem;
+  height: 14rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+.images_main{
+  height: 60.938rem;
+  width: 60.938rem;
+}
+.images_main img{
+  height: 60.938rem;
+  width: 60.938rem;
+}

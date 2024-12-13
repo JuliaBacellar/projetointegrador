@@ -3,7 +3,7 @@ export function loadProducts(productList, load) {
 
   productList.forEach((produto) => {
     const valParcela = (produto.preco / 10).toFixed(2);
-    const html = `<div class="product-card idprod" id="${produto.codigoProduto}">
+    const html = `<div class="product-card-idprod" id="${produto.codigoProduto}">
         <div>
           <img id="${produto.codigoProduto}"
             src="${produto.imagemProduto.img1}"
@@ -62,8 +62,7 @@ productTitle.children[1].innerText = `${produto.tituloProduto}`
 
  const HTML = `<div class="product_images_container">
 
- <div class="images_selector">
-
+<div class="images_selector">
    <i class="bi bi-chevron-double-up"></i>
  <ul>
    <li><img src="${produto.imagemProduto.img1}" alt="" class="product_thumb"></li>
@@ -72,10 +71,10 @@ productTitle.children[1].innerText = `${produto.tituloProduto}`
    <li><img src="${produto.imagemProduto.img4}"" alt="" class="product_thumb"></li>
  </ul>
  <i class="bi bi-chevron-double-down"></i>
- </div>
- <div class="images_main">
+</div>
+<div class="images_main">
    <img src="${produto.imagemProduto.img1}" alt="">
- </div>
+</div>
 </div>
 
 
